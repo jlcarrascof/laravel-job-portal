@@ -12,7 +12,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('company/dashboard', function () {
-    return view('frontend.candidate-dashboard.dashboard');
+    return view('frontend.company-dashboard.dashboard');
 })->middleware(['auth', 'verified'])->name('company.dashboard');
 
 Route::middleware('auth')->group(function () {
